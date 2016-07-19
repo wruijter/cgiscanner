@@ -5,4 +5,4 @@ Quick-n-dirty nmap patch to scan for CGI applications in the network (due to htt
 
 2) ga naar de directory waarin het http-enum.nse script staat
 
-3) run nmap met het volgende commando: nmap -T3 --script=./http-enum.nse <host(range)>
+3) run nmap met het volgende commando: nmap -T3 --script=./http-enum.nse hostname
