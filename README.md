@@ -2,6 +2,10 @@
 Quick-n-dirty nmap patch to scan for CGI applications in the network (due to httpoxy)
 
 1) run het bash bestand of voer de commandos handmatig uit, dit is de database waar alleen CGI gerelateerde entries instaan. Deze zijn verkregen uit de nikto database.
+```
+cp /usr/share/nmap/nselib/data/http-fingerprints.lua /usr/share/nmap/nselib/data/http-fingerprints.lua.backup
+cat ./cgi-db.lua > /usr/share/nmap/nselib/data/http-fingerprints.lua 
+```
 
 2) ga naar de directory waarin het http-enum.nse script staat
 
